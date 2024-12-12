@@ -1,0 +1,17 @@
+pipeline {
+    agent { label 'LABEL_OF_AGENT' }
+    stages {
+        stage('Build') {
+            environment {
+                WORKSPACE = "${env.WORKSPACE}"
+            }
+            steps {
+                git branch: 'main',
+                        credentialsId: 'jenkins-bitbucket',
+                        url: 'https://github.com/hung-2020/SwagLabs.git'
+				npm ci
+                cross-env browser=chrome env=TestEnv allscreenshots=off name=Swag_Labs_Automation cucumber-js --tags @TS-001 & npx ts-node report-generator.ts
+            }
+        }
+	}
+}

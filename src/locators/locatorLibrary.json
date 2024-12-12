@@ -1,0 +1,38 @@
+{
+    "usernameField": {
+        "locator": "#user-name"
+    },
+    "passwordField": {
+        "locator": "#password"
+    },
+    "loginButton": {
+        "locator": "#login-button"
+    },
+    "addToCartButton": {
+        "locator": "//*[@class='inventory_item_name ' and text()='${productName}']/../../..//button[contains(@id,'add-to-cart')]"
+    },
+    "shoppingCartButton": {
+        "locator": ".shopping_cart_link"
+    },
+    "checkoutButton": {
+        "locator": "#checkout"
+    },
+    "firstName": {
+        "locator": "#first-name"
+    },
+    "lastName": {
+        "locator": "#last-name"
+    },
+    "postalCode": {
+        "locator": "#postal-code"
+    },
+    "continueButton": {
+        "locator": "#continue"
+    },
+    "finishButton": {
+        "locator": "#finish"
+    },
+    "completeHeader": {
+        "locator": ".complete-header:has-text('Thank you for your order!')"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "default": {
+        "dryRun": false,
+        "formatOptions": {
+            "snippetInterface": "aysnc-await"
+        },
+        "features": [
+            "tests/features/**/*.feature"
+        ],
+        "paths": [
+            "tests/features/**/*.feature"
+        ],
+        "require": [
+            "tests/steps/**/*.ts",
+            "src/corelib/**/*.ts"
+        ],
+        "requireModule": [
+            "ts-node/register"
+        ],
+        "format": [
+            "progress-bar",
+            "html:reports/cucumber/cucumber-report.html",
+            "json:reports/cucumber/cucumber-report.json"
+        ],
+        "parallel": 3
+    }
+}

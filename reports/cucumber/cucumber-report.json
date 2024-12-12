@@ -1,0 +1,189 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "purchase-of-products;user-logs-in-and-purchase-a-products",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "User logs in and purchase a products",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 142016400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I have logged into Swag Labs",
+            "match": {
+              "location": "tests\\steps\\LoginSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 583354499
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Products"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Backpack"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Bike Light"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Onesie"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add the following products into the shopping cart",
+            "match": {
+              "location": "tests\\steps\\ProductsSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2134102698
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click on the shopping cart icon",
+            "match": {
+              "location": "tests\\steps\\CartSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1032532398
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click on the checkout button",
+            "match": {
+              "location": "tests\\steps\\CheckoutSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17736199
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Firstname",
+                      "Lastname",
+                      "Zip/Postal Code"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "John",
+                      "Smtih",
+                      "2212"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I enter the following details on the Checkout: Your Information page",
+            "match": {
+              "location": "tests\\steps\\CheckoutSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1063417499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I click on the Finish button",
+            "match": {
+              "location": "tests\\steps\\CheckoutSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1042094900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see the order complete header is displayed",
+            "match": {
+              "location": "tests\\steps\\CheckoutSteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1018360999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21008300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FullSuite",
+            "line": 1
+          },
+          {
+            "name": "@TS-001",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "purchase-of-products",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Purchase of products",
+    "tags": [
+      {
+        "name": "@FullSuite",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\features\\purchases.feature"
+  }
+]

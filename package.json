@@ -1,0 +1,24 @@
+{
+  "name": "swaglabs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "cross-env browser=chrome env=TestEnv allscreenshots=off name=Swag_Labs_Automation cucumber-js --tags @TS-001 & npx ts-node report-generator.ts"
+  },
+  "author": "Hung Phu",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.1.0",
+    "@playwright/test": "^1.49.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "multiple-cucumber-html-reporter": "^3.8.0",
+    "playwright": "^1.49.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
